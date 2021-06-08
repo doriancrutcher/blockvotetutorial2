@@ -1,0 +1,432 @@
+
+###############################################################################
+
+# Britain (United Kingdom) and Ireland (Eire)
+
+# From Peter Ilieve (1994-07-06):
+#
+# On 17 Jan 1994 the Independent, a UK quality newspaper, had a piece about
+# historical vistas along the Thames in west London. There was a photo
+# and a sketch map showing some of the sightlines involved. One paragraph
+# of the text said:
+#
+# 'An old stone obelisk marking a forgotten terrestrial meridian stands
+# beside the river at Kew. In the 18th century, before time and longitude
+# was standardised by the Royal Observatory in Greenwich, scholars observed
+# this stone and the movement of stars from Kew Observatory nearby. They
+# made their calculations and set the time for the Horse Guards and Parliament,
+# but now the stone is obscured by scrubwood and can only be seen by walking
+# along the towpath within a few yards of it.'
+#
+# I have a one inch to one mile map of London and my estimate of the stone's
+# position is 51° 28' 30" N, 0° 18' 45" W. The longitude should
+# be within about ±2". The Ordnance Survey grid reference is TQ172761.
+#
+# [This yields STDOFF = -0:01:15 for London LMT in the 18th century.]
+
+# From Paul Eggert (1993-11-18):
+#
+# Howse writes that Britain was the first country to use standard time.
+# The railways cared most about the inconsistencies of local mean time,
+# and it was they who forced a uniform time on the country.
+# The original idea was credited to Dr. William Hyde Wollaston (1766-1828)
+# and was popularized by Abraham Follett Osler (1808-1903).
+# The first railway to adopt London time was the Great Western Railway
+# in November 1840; other railways followed suit, and by 1847 most
+# (though not all) railways used London time.  On 1847-09-22 the
+# Railway Clearing House, an industry standards body, recommended that GMT be
+# adopted at all stations as soon as the General Post Office permitted it.
+# The transition occurred on 12-01 for the L&NW, the Caledonian,
+# and presumably other railways; the January 1848 Bradshaw's lists many
+# railways as using GMT.  By 1855 the vast majority of public
+# clocks in Britain were set to GMT (though some, like the great clock
+# on Tom Tower at Christ Church, Oxford, were fitted with two minute hands,
+# one for local time and one for GMT).  The last major holdout was the legal
+# system, which stubbornly stuck to local time for many years, leading
+# to oddities like polls opening at 08:13 and closing at 16:13.
+# The legal system finally switched to GMT when the Statutes (Definition
+# of Time) Act took effect; it received the Royal Assent on 1880-08-02.
+#
+# In the tables below, we condense this complicated story into a single
+# transition date for London, namely 1847-12-01.  We don't know as much
+# about Dublin, so we use 1880-08-02, the legal transition time.
+
+# From Paul Eggert (2014-07-19):
+# The ancients had no need for daylight saving, as they kept time
+# informally or via hours whose length depended on the time of year.
+# Daylight saving time in its modern sense was invented by the
+# New Zealand entomologist George Vernon Hudson (1867-1946),
+# whose day job as a postal clerk led him to value
+# after-hours daylight in which to pursue his research.
+# In 1895 he presented a paper to the Wellington Philosophical Society
+# that proposed a two-hour daylight-saving shift.  See:
+# Hudson GV. On seasonal time-adjustment in countries south of lat. 30°.
+# Transactions and Proceedings of the New Zealand Institute. 1895;28:734
+# http://rsnz.natlib.govt.nz/volume/rsnz_28/rsnz_28_00_006110.html
+# Although some interest was expressed in New Zealand, his proposal
+# did not find its way into law and eventually it was almost forgotten.
+#
+# In England, DST was independently reinvented by William Willett (1857-1915),
+# a London builder and member of the Royal Astronomical Society
+# who circulated a pamphlet "The Waste of Daylight" (1907)
+# that proposed advancing clocks 20 minutes on each of four Sundays in April,
+# and retarding them by the same amount on four Sundays in September.
+# A bill was drafted in 1909 and introduced in Parliament several times,
+# but it met with ridicule and opposition, especially from farming interests.
+# Later editions of the pamphlet proposed one-hour summer time, and
+# it was eventually adopted as a wartime measure in 1916.
+# See: Summer Time Arrives Early, The Times (2000-05-18).
+# A monument to Willett was unveiled on 1927-05-21, in an open space in
+# a 45-acre wood near Chislehurst, Kent that was purchased by popular
+# subscription and open to the public.  On the south face of the monolith,
+# designed by G. W. Miller, is the William Willett Memorial Sundial,
+# which is permanently set to Summer Time.
+
+# From Winston Churchill (1934-04-28):
+# It is one of the paradoxes of history that we should owe the boon of
+# summer time, which gives every year to the people of this country
+# between 160 and 170 hours more daylight leisure, to a war which
+# plunged Europe into darkness for four years, and shook the
+# foundations of civilization throughout the world.
+#	-- "A Silent Toast to William Willett", Pictorial Weekly;
+#	republished in Finest Hour (Spring 2002) 1(114):26
+#	https://www.winstonchurchill.org/publications/finest-hour/finest-hour-114/a-silent-toast-to-william-willett-by-winston-s-churchill
+
+# From Paul Eggert (2015-08-08):
+# The OED Supplement says that the English originally said "Daylight Saving"
+# when they were debating the adoption of DST in 1908; but by 1916 this
+# term appears only in quotes taken from DST's opponents, whereas the
+# proponents (who eventually won the argument) are quoted as using "Summer".
+# The term "Summer Time" was introduced by Herbert Samuel, Home Secretary; see:
+# Viscount Samuel. Leisure in a Democracy. Cambridge University Press
+# ISBN 978-1-107-49471-8 (1949, reissued 2015), p 8.
+
+# From Arthur David Olson (1989-01-19):
+# A source at the British Information Office in New York avers that it's
+# known as "British" Summer Time in all parts of the United Kingdom.
+
+# Date: 4 Jan 89 08:57:25 GMT (Wed)
+# From: Jonathan Leffler
+# [British Summer Time] is fixed annually by Act of Parliament.
+# If you can predict what Parliament will do, you should be in
+# politics making a fortune, not computing.
+
+# From Chris Carrier (1996-06-14):
+# I remember reading in various wartime issues of the London Times the
+# acronym BDST for British Double Summer Time.  Look for the published
+# time of sunrise and sunset in The Times, when BDST was in effect, and
+# if you find a zone reference it will say, "All times B.D.S.T."
+
+# From Joseph S. Myers (1999-09-02):
+# ... some military cables (WO 219/4100 - this is a copy from the
+# main SHAEF archives held in the US National Archives, SHAEF/5252/8/516)
+# agree that the usage is BDST (this appears in a message dated 17 Feb 1945).
+
+# From Joseph S. Myers (2000-10-03):
+# On 18th April 1941, Sir Stephen Tallents of the BBC wrote to Sir
+# Alexander Maxwell of the Home Office asking whether there was any
+# official designation; the reply of the 21st was that there wasn't
+# but he couldn't think of anything better than the "Double British
+# Summer Time" that the BBC had been using informally.
+# https://www.polyomino.org.uk/british-time/bbc-19410418.png
+# https://www.polyomino.org.uk/british-time/ho-19410421.png
+
+# From Sir Alexander Maxwell in the above-mentioned letter (1941-04-21):
+# [N]o official designation has as far as I know been adopted for the time
+# which is to be introduced in May....
+# I cannot think of anything better than "Double British Summer Time"
+# which could not be said to run counter to any official description.
+
+# From Paul Eggert (2000-10-02):
+# Howse writes (p 157) 'DBST' too, but 'BDST' seems to have been common
+# and follows the more usual convention of putting the location name first,
+# so we use 'BDST'.
+
+# Peter Ilieve (1998-04-19) described at length
+# the history of summer time legislation in the United Kingdom.
+# Since 1998 Joseph S. Myers has been updating
+# and extending this list, which can be found in
+# https://www.polyomino.org.uk/british-time/
+
+# From Joseph S. Myers (1998-01-06):
+#
+# The legal time in the UK outside of summer time is definitely GMT, not UTC;
+# see Lord Tanlaw's speech
+# https://www.publications.parliament.uk/pa/ld199798/ldhansrd/vo970611/text/70611-10.htm#70611-10_head0
+# (Lords Hansard 11 June 1997 columns 964 to 976).
+
+# From Paul Eggert (2006-03-22):
+#
+# For lack of other data, follow Shanks & Pottenger for Eire in 1940-1948.
+#
+# Given Ilieve and Myers's data, the following claims by Shanks & Pottenger
+# are incorrect:
+#     * Wales did not switch from GMT to daylight saving time until
+#	1921 Apr 3, when they began to conform with the rest of Great Britain.
+# Actually, Wales was identical after 1880.
+#     * Eire had two transitions on 1916 Oct 1.
+# It actually just had one transition.
+#     * Northern Ireland used single daylight saving time throughout WW II.
+# Actually, it conformed to Britain.
+#     * GB-Eire changed standard time to 1 hour ahead of GMT on 1968-02-18.
+# Actually, that date saw the usual switch to summer time.
+# Standard time was not changed until 1968-10-27 (the clocks didn't change).
+#
+# Here is another incorrect claim by Shanks & Pottenger:
+#     * Jersey, Guernsey, and the Isle of Man did not switch from GMT
+#	to daylight saving time until 1921 Apr 3, when they began to
+#	conform with Great Britain.
+# S.R.&O. 1916, No. 382 and HO 45/10811/312364 (quoted above) say otherwise.
+#
+# The following claim by Shanks & Pottenger is possible though doubtful;
+# we'll ignore it for now.
+#     * Dublin's 1971-10-31 switch was at 02:00, even though London's was 03:00.
+
+# From Paul Eggert (2017-12-04):
+#
+# Dunsink Observatory (8 km NW of Dublin's center) was to Dublin as
+# Greenwich was to London.  For example:
+#
+#   "Timeball on the ballast office is down.  Dunsink time."
+#   -- James Joyce, Ulysses
+#
+# The abbreviation DMT stood for "Dublin Mean Time" or "Dunsink Mean Time";
+# this being Ireland, opinions differed.
+#
+# Whitman says Dublin/Dunsink Mean Time was UT-00:25:21, which agrees
+# with measurements of recent visitors to the Meridian Room of Dunsink
+# Observatory; see Malone D. Dunsink and timekeeping. 2016-01-24.
+# <https://www.maths.tcd.ie/~dwmalone/time/dunsink.html>.  Malone
+# writes that the Nautical Almanac listed UT-00:25:22 until 1896, when
+# it moved to UT-00:25:21.1 (I confirmed that the 1893 edition used
+# the former and the 1896 edition used the latter).  Evidently the
+# news of this change propagated slowly, as Milne 1899 still lists
+# UT-00:25:22 and cites the International Telegraph Bureau.  As it is
+# not clear that there was any practical significance to the change
+# from UT-00:25:22 to UT-00:25:21.1 in civil timekeeping, omit this
+# transition for now and just use the latter value, omitting its
+# fraction since our format cannot represent fractions.
+
+# "Countess Markievicz ... claimed that the [1916] abolition of Dublin Mean Time
+# was among various actions undertaken by the 'English' government that
+# would 'put the whole country into the SF (Sinn Féin) camp'.  She claimed
+# Irish 'public feeling (was) outraged by forcing of English time on us'."
+# -- Parsons M. Dublin lost its time zone - and 25 minutes - after 1916 Rising.
+# Irish Times 2014-10-27.
+# https://www.irishtimes.com/news/politics/dublin-lost-its-time-zone-and-25-minutes-after-1916-rising-1.1977411
+
+# From Joseph S. Myers (2005-01-26):
+# Irish laws are available online at <http://www.irishstatutebook.ie>.
+# These include various relating to legal time, for example:
+#
+# ZZA13Y1923.html ZZA12Y1924.html ZZA8Y1925.html ZZSIV20PG1267.html
+#
+# ZZSI71Y1947.html ZZSI128Y1948.html ZZSI23Y1949.html ZZSI41Y1950.html
+# ZZSI27Y1951.html ZZSI73Y1952.html
+#
+# ZZSI11Y1961.html ZZSI232Y1961.html ZZSI182Y1962.html
+# ZZSI167Y1963.html ZZSI257Y1964.html ZZSI198Y1967.html
+# ZZA23Y1968.html ZZA17Y1971.html
+#
+# ZZSI67Y1981.html ZZSI212Y1982.html ZZSI45Y1986.html
+# ZZSI264Y1988.html ZZSI52Y1990.html ZZSI371Y1992.html
+# ZZSI395Y1994.html ZZSI484Y1997.html ZZSI506Y2001.html
+#
+# [These are all relative to the root, e.g., the first is
+# <http://www.irishstatutebook.ie/ZZA13Y1923.html>.]
+#
+# (These are those I found, but there could be more.  In any case these
+# should allow various updates to the comments in the europe file to cover
+# the laws applicable in Ireland.)
+#
+# (Note that the time in the Republic of Ireland since 1968 has been defined
+# in terms of standard time being GMT+1 with a period of winter time when it
+# is GMT, rather than standard time being GMT with a period of summer time
+# being GMT+1.)
+
+# From Paul Eggert (1999-03-28):
+# Clive Feather (<news:859845706.26043.0@office.demon.net>, 1997-03-31)
+# reports that Folkestone (Cheriton) Shuttle Terminal uses Concession Time
+# (CT), equivalent to French civil time.
+# Julian Hill (<news:36118128.5A14@virgin.net>, 1998-09-30) reports that
+# trains between Dollands Moor (the freight facility next door)
+# and Frethun run in CT.
+# My admittedly uninformed guess is that the terminal has two authorities,
+# the French concession operators and the British civil authorities,
+# and that the time depends on who you're talking to.
+# If, say, the British police were called to the station for some reason,
+# I would expect the official police report to use GMT/BST and not CET/CEST.
+# This is a borderline case, but for now let's stick to GMT/BST.
+
+# From an anonymous contributor (1996-06-02):
+# The law governing time in Ireland is under Statutory Instrument SI 395/94,
+# which gives force to European Union 7th Council Directive No. 94/21/EC.
+# Under this directive, the Minister for Justice in Ireland makes appropriate
+# regulations. I spoke this morning with the Secretary of the Department of
+# Justice (tel +353 1 678 9711) who confirmed to me that the correct name is
+# "Irish Summer Time", abbreviated to "IST".
+#
+# From Paul Eggert (2017-12-07):
+# The 1996 anonymous contributor's goal was to determine the correct
+# abbreviation for summer time in Dublin and so the contributor
+# focused on the "IST", not on the "Irish Summer Time".  Though the
+# "IST" was correct, the "Irish Summer Time" appears to have been an
+# error, as Ireland's Standard Time (Amendment) Act, 1971 states that
+# standard time in Ireland remains at UT +01 and is observed in
+# summer, and that Greenwich mean time is observed in winter.  (Thanks
+# to Derick Rethans for pointing out the error.)  That is, when
+# Ireland amended the 1968 act that established UT +01 as Irish
+# Standard Time, it left standard time unchanged and established GMT
+# as a negative daylight saving time in winter.  So, in this database
+# IST stands for Irish Summer Time for timestamps before 1968, and for
+# Irish Standard Time after that.  See:
+# http://www.irishstatutebook.ie/eli/1971/act/17/enacted/en/print
+
+# Michael Deckers (2017-06-01) gave the following URLs for Ireland's
+# Summer Time Act, 1925 and Summer Time Orders, 1926 and 1947:
+# http://www.irishstatutebook.ie/eli/1925/act/8/enacted/en/print
+# http://www.irishstatutebook.ie/eli/1926/sro/919/made/en/print
+# http://www.irishstatutebook.ie/eli/1947/sro/71/made/en/print
+
+# Rule	NAME	FROM	TO	-	IN	ON	AT	SAVE	LETTER/S
+# Summer Time Act, 1916
+Rule	GB-Eire	1916	only	-	May	21	2:00s	1:00	BST
+Rule	GB-Eire	1916	only	-	Oct	 1	2:00s	0	GMT
+# S.R.&O. 1917, No. 358
+Rule	GB-Eire	1917	only	-	Apr	 8	2:00s	1:00	BST
+Rule	GB-Eire	1917	only	-	Sep	17	2:00s	0	GMT
+# S.R.&O. 1918, No. 274
+Rule	GB-Eire	1918	only	-	Mar	24	2:00s	1:00	BST
+Rule	GB-Eire	1918	only	-	Sep	30	2:00s	0	GMT
+# S.R.&O. 1919, No. 297
+Rule	GB-Eire	1919	only	-	Mar	30	2:00s	1:00	BST
+Rule	GB-Eire	1919	only	-	Sep	29	2:00s	0	GMT
+# S.R.&O. 1920, No. 458
+Rule	GB-Eire	1920	only	-	Mar	28	2:00s	1:00	BST
+# S.R.&O. 1920, No. 1844
+Rule	GB-Eire	1920	only	-	Oct	25	2:00s	0	GMT
+# S.R.&O. 1921, No. 363
+Rule	GB-Eire	1921	only	-	Apr	 3	2:00s	1:00	BST
+Rule	GB-Eire	1921	only	-	Oct	 3	2:00s	0	GMT
+# S.R.&O. 1922, No. 264
+Rule	GB-Eire	1922	only	-	Mar	26	2:00s	1:00	BST
+Rule	GB-Eire	1922	only	-	Oct	 8	2:00s	0	GMT
+# The Summer Time Act, 1922
+Rule	GB-Eire	1923	only	-	Apr	Sun>=16	2:00s	1:00	BST
+Rule	GB-Eire	1923	1924	-	Sep	Sun>=16	2:00s	0	GMT
+Rule	GB-Eire	1924	only	-	Apr	Sun>=9	2:00s	1:00	BST
+Rule	GB-Eire	1925	1926	-	Apr	Sun>=16	2:00s	1:00	BST
+# The Summer Time Act, 1925
+Rule	GB-Eire	1925	1938	-	Oct	Sun>=2	2:00s	0	GMT
+Rule	GB-Eire	1927	only	-	Apr	Sun>=9	2:00s	1:00	BST
+Rule	GB-Eire	1928	1929	-	Apr	Sun>=16	2:00s	1:00	BST
+Rule	GB-Eire	1930	only	-	Apr	Sun>=9	2:00s	1:00	BST
+Rule	GB-Eire	1931	1932	-	Apr	Sun>=16	2:00s	1:00	BST
+Rule	GB-Eire	1933	only	-	Apr	Sun>=9	2:00s	1:00	BST
+Rule	GB-Eire	1934	only	-	Apr	Sun>=16	2:00s	1:00	BST
+Rule	GB-Eire	1935	only	-	Apr	Sun>=9	2:00s	1:00	BST
+Rule	GB-Eire	1936	1937	-	Apr	Sun>=16	2:00s	1:00	BST
+Rule	GB-Eire	1938	only	-	Apr	Sun>=9	2:00s	1:00	BST
+Rule	GB-Eire	1939	only	-	Apr	Sun>=16	2:00s	1:00	BST
+# S.R.&O. 1939, No. 1379
+Rule	GB-Eire	1939	only	-	Nov	Sun>=16	2:00s	0	GMT
+# S.R.&O. 1940, No. 172 and No. 1883
+Rule	GB-Eire	1940	only	-	Feb	Sun>=23	2:00s	1:00	BST
+# S.R.&O. 1941, No. 476
+Rule	GB-Eire	1941	only	-	May	Sun>=2	1:00s	2:00	BDST
+Rule	GB-Eire	1941	1943	-	Aug	Sun>=9	1:00s	1:00	BST
+# S.R.&O. 1942, No. 506
+Rule	GB-Eire	1942	1944	-	Apr	Sun>=2	1:00s	2:00	BDST
+# S.R.&O. 1944, No. 932
+Rule	GB-Eire	1944	only	-	Sep	Sun>=16	1:00s	1:00	BST
+# S.R.&O. 1945, No. 312
+Rule	GB-Eire	1945	only	-	Apr	Mon>=2	1:00s	2:00	BDST
+Rule	GB-Eire	1945	only	-	Jul	Sun>=9	1:00s	1:00	BST
+# S.R.&O. 1945, No. 1208
+Rule	GB-Eire	1945	1946	-	Oct	Sun>=2	2:00s	0	GMT
+Rule	GB-Eire	1946	only	-	Apr	Sun>=9	2:00s	1:00	BST
+# The Summer Time Act, 1947
+Rule	GB-Eire	1947	only	-	Mar	16	2:00s	1:00	BST
+Rule	GB-Eire	1947	only	-	Apr	13	1:00s	2:00	BDST
+Rule	GB-Eire	1947	only	-	Aug	10	1:00s	1:00	BST
+Rule	GB-Eire	1947	only	-	Nov	 2	2:00s	0	GMT
+# Summer Time Order, 1948 (S.I. 1948/495)
+Rule	GB-Eire	1948	only	-	Mar	14	2:00s	1:00	BST
+Rule	GB-Eire	1948	only	-	Oct	31	2:00s	0	GMT
+# Summer Time Order, 1949 (S.I. 1949/373)
+Rule	GB-Eire	1949	only	-	Apr	 3	2:00s	1:00	BST
+Rule	GB-Eire	1949	only	-	Oct	30	2:00s	0	GMT
+# Summer Time Order, 1950 (S.I. 1950/518)
+# Summer Time Order, 1951 (S.I. 1951/430)
+# Summer Time Order, 1952 (S.I. 1952/451)
+Rule	GB-Eire	1950	1952	-	Apr	Sun>=14	2:00s	1:00	BST
+Rule	GB-Eire	1950	1952	-	Oct	Sun>=21	2:00s	0	GMT
+# revert to the rules of the Summer Time Act, 1925
+Rule	GB-Eire	1953	only	-	Apr	Sun>=16	2:00s	1:00	BST
+Rule	GB-Eire	1953	1960	-	Oct	Sun>=2	2:00s	0	GMT
+Rule	GB-Eire	1954	only	-	Apr	Sun>=9	2:00s	1:00	BST
+Rule	GB-Eire	1955	1956	-	Apr	Sun>=16	2:00s	1:00	BST
+Rule	GB-Eire	1957	only	-	Apr	Sun>=9	2:00s	1:00	BST
+Rule	GB-Eire	1958	1959	-	Apr	Sun>=16	2:00s	1:00	BST
+Rule	GB-Eire	1960	only	-	Apr	Sun>=9	2:00s	1:00	BST
+# Summer Time Order, 1961 (S.I. 1961/71)
+# Summer Time (1962) Order, 1961 (S.I. 1961/2465)
+# Summer Time Order, 1963 (S.I. 1963/81)
+Rule	GB-Eire	1961	1963	-	Mar	lastSun	2:00s	1:00	BST
+Rule	GB-Eire	1961	1968	-	Oct	Sun>=23	2:00s	0	GMT
+# Summer Time (1964) Order, 1963 (S.I. 1963/2101)
+# Summer Time Order, 1964 (S.I. 1964/1201)
+# Summer Time Order, 1967 (S.I. 1967/1148)
+Rule	GB-Eire	1964	1967	-	Mar	Sun>=19	2:00s	1:00	BST
+# Summer Time Order, 1968 (S.I. 1968/117)
+Rule	GB-Eire	1968	only	-	Feb	18	2:00s	1:00	BST
+# The British Standard Time Act, 1968
+#	(no summer time)
+# The Summer Time Act, 1972
+Rule	GB-Eire	1972	1980	-	Mar	Sun>=16	2:00s	1:00	BST
+Rule	GB-Eire	1972	1980	-	Oct	Sun>=23	2:00s	0	GMT
+# Summer Time Order, 1980 (S.I. 1980/1089)
+# Summer Time Order, 1982 (S.I. 1982/1673)
+# Summer Time Order, 1986 (S.I. 1986/223)
+# Summer Time Order, 1988 (S.I. 1988/931)
+Rule	GB-Eire	1981	1995	-	Mar	lastSun	1:00u	1:00	BST
+Rule	GB-Eire 1981	1989	-	Oct	Sun>=23	1:00u	0	GMT
+# Summer Time Order, 1989 (S.I. 1989/985)
+# Summer Time Order, 1992 (S.I. 1992/1729)
+# Summer Time Order 1994 (S.I. 1994/2798)
+Rule	GB-Eire 1990	1995	-	Oct	Sun>=22	1:00u	0	GMT
+# Summer Time Order 1997 (S.I. 1997/2982)
+# See EU for rules starting in 1996.
+#
+# Use Europe/London for Jersey, Guernsey, and the Isle of Man.
+
+###############################################################################
+
+# Europe
+
+# The following rules are for the European Union and for its
+# predecessor organization, the European Communities.
+# For brevity they are called "EU rules" elsewhere in this file.
+
+# Rule	NAME	FROM	TO	-	IN	ON	AT	SAVE	LETTER/S
+Rule	EU	1977	1980	-	Apr	Sun>=1	 1:00u	1:00	S
+Rule	EU	1977	only	-	Sep	lastSun	 1:00u	0	-
+Rule	EU	1978	only	-	Oct	 1	 1:00u	0	-
+Rule	EU	1979	1995	-	Sep	lastSun	 1:00u	0	-
+Rule	EU	1981	max	-	Mar	lastSun	 1:00u	1:00	S
+Rule	EU	1996	max	-	Oct	lastSun	 1:00u	0	-
+# The most recent directive covers the years starting in 2002.  See:
+# Directive 2000/84/EC of the European Parliament and of the Council
+# of 19 January 2001 on summer-time arrangements.
+# http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:32000L0084:EN:NOT
+
+
+# Zone	NAME		STDOFF	RULES	FORMAT	[UNTIL]
+Zone	Europe/London	-0:01:15 -	LMT	1847 Dec  1  0:00s
+			 0:00	GB-Eire	%s	1968 Oct 27
+			 1:00	-	BST	1971 Oct 31  2:00u
+			 0:00	GB-Eire	%s	1996
+			 0:00	EU	GMT/BST
+Link	Europe/London	Europe/Jersey
+Link	Europe/London	Europe/Guernsey
+Link	Europe/London	Europe/Isle_of_Man

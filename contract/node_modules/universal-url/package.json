@@ -1,0 +1,43 @@
+{
+  "name": "universal-url",
+  "description": "WHATWG URL for Node & Browser.",
+  "version": "2.0.0",
+  "license": "MIT",
+  "author": "Steven Vachon <contact@svachon.com> (https://www.svachon.com/)",
+  "repository": "stevenvachon/universal-url",
+  "browser": "browser.js",
+  "dependencies": {
+    "hasurl": "^1.0.0",
+    "whatwg-url": "^7.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "babelify": "^10.0.0",
+    "browserify": "^16.2.3",
+    "chai": "^4.2.0",
+    "common-shakeify": "~0.5.2",
+    "gzip-size-cli": "^3.0.0",
+    "mocha": "^5.2.0",
+    "puppeteer": "^1.10.0",
+    "rimraf": "^2.6.2",
+    "uglify-es": "^3.3.9"
+  },
+  "engines": {
+    "node": ">= 6"
+  },
+  "scripts": {
+    "posttest": "uglifyjs browser-built.js --compress --mangle --output=browser-built.js && gzip-size browser-built.js && rimraf browser-built.js",
+    "pretest": "browserify browser.js --global-transform [ babelify --presets [ @babel/env ] ] --plugin=common-shakeify --standalone=UniversalURL --outfile=browser-built.js",
+    "test": "mocha test --check-leaks --globals=URL,URLSearchParams --bail"
+  },
+  "files": [
+    "browser.js",
+    "index.js"
+  ],
+  "keywords": [
+    "uri",
+    "url",
+    "whatwg"
+  ]
+}
