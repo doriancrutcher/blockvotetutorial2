@@ -1,1 +1,0 @@
-module.exports = require("near-sdk-bindgen/compiler");

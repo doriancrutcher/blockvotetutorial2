@@ -1,12 +1,17 @@
 import { Tab } from "bootstrap";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Table, Container, Button } from "react-bootstrap";
 
 const Home = (props) => {
-  const promptList = [
-    "Who would win in Smash bros?",
-    "Who is the better actor?",
-  ];
+  const [promptList, changePromptList] = useState([]);
+
+  useEffect(() => {
+    const getPrompts = async () => {
+      changePromptList(await window.contract.getAllPrompts());
+      console.log(await window.contract.getAllPrompts());
+    };
+    getPrompts();
+  }, []);
 
   return (
     <Container>
@@ -26,7 +31,9 @@ const Home = (props) => {
                 <td>{el}</td>
                 <td>
                   {" "}
-                  <Button>Go to Poll</Button>
+                  <Button onClick={() => props.changeCandidates(el)}>
+                    Go to Poll
+                  </Button>
                 </td>
               </tr>
             );

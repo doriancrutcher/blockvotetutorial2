@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { Container, Form, Button } from "react-bootstrap";
 
 const NewPoll = (props) => {
@@ -9,6 +9,32 @@ const NewPoll = (props) => {
   const candidateName2URL = useRef();
 
   const promptRef = useRef();
+
+  const [disableButton, changeDisable] = useState(false);
+
+  const sendToBlockChain = async () => {
+    changeDisable(true);
+    await window.contract.addUrl({
+      name: candidateName1.current.value,
+      url: candidateName1URL.current.value,
+    });
+
+    await window.contract.addUrl({
+      name: candidateName2.current.value,
+      url: candidateName2URL.current.value,
+    });
+
+    await window.contract.addCandidatePair({
+      prompt: promptRef.current.value,
+      name1: candidateName1.current.value,
+      name2: candidateName2.current.value,
+    });
+
+    await window.contract.addToPromptArray({ prompt: promptRef.current.value });
+
+    alert("head back to home page");
+  };
+
   return (
     <Container style={{ marginTop: "10px" }}>
       <Form>
@@ -50,7 +76,13 @@ const NewPoll = (props) => {
         </Form.Group>
       </Form>
 
-      <Button variant='primary'>Submit</Button>
+      <Button
+        disabled={disableButton}
+        onClick={sendToBlockChain}
+        variant='primary'
+      >
+        Submit
+      </Button>
     </Container>
   );
 };

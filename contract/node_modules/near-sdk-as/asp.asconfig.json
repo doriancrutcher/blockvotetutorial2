@@ -1,7 +1,0 @@
-{
-  "extends": "./asconfig.json",
-  "entries": ["assembly/vm/__tests__/vm.include.ts"],
-  "options": {
-    "exportRuntime": true
-  }
-}

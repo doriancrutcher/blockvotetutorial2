@@ -1,1 +1,0 @@
-import "near-sdk-bindgen";

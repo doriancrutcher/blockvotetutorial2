@@ -1,8 +1,0 @@
-{
-  "extends": "assemblyscript/std/portable.json",
-  "include": ["./**/*.ts"],
-  "compilerOptions": {
-    "types": ["node"],
-    "strictNullChecks": false
-  }
-}
